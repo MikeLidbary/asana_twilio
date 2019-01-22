@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post( '/createtask', 'AsanaController@index' );
+Route::post( '/notifications', 'AutomateController@notifications' );
