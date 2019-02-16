@@ -14,6 +14,7 @@ use Illuminate\Http\Request;
 */
 
 Route::post( '/notifications', 'API\AsanaController@notifications' );
+Route::get( '/createtask', 'API\AsanaController@index' );
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
